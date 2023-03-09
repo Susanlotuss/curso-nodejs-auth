@@ -16,7 +16,7 @@ if (config.isProd) {
   }
 }
 
-const sequelize = new Sequelize(process.env.DATABASE_URL, options);
+const sequelize = new Sequelize('postgres://nico:admin123@localhost:5432/my_store', options);
 
 setupModels(sequelize);
 
